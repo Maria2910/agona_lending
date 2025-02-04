@@ -19,18 +19,20 @@ img {
 .header-block {
     align-items: center;
     justify-content: space-between;
+    padding: 1vh 2vw;
     padding: 22px;
 }
 
 .button {
     display: inline-block;
     border: none;
-    padding: 15px 44px;
+    padding: 1vw 3.5vw;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    white-space: nowrap;
     color: white;
     background-color: #fb4b4d;
     cursor: pointer;
@@ -43,10 +45,10 @@ img {
 
 .nav-link {
     display: inline-block;
-    padding: 15px 44px;
+    padding: 1vw 3.5vw;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #222;
@@ -57,7 +59,7 @@ img {
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 1.5vw;
 }
 
 .nav-link {
@@ -81,28 +83,31 @@ img {
     width: 50%;
 }
 
+.ticker {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 .ujjo-image {
-    padding: 20px;
+    padding: 1.8vw;
     display: flex;
     justify-content: center;
 }
 
 .hero-phrase {
+    padding: 0.8vw 0;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: black;
 }
 
-.ticker {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
 .hero-image {
-    padding: 20px;
+    padding: 1.8vw;
     display: flex;
     justify-content: center;
 }
@@ -110,10 +115,10 @@ img {
 .hero-title {
     margin: 0;
     border-bottom: 1px solid black;
-    padding: 20px 100px;
+    padding: 1.5vw 8vw;
     font-weight: 400;
-    font-size: 58px;
-    line-height: 65px;
+    font-size: 3.8em;
+    line-height: 1.1em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
@@ -121,7 +126,7 @@ img {
 }
 
 .hero-image-2 {
-    padding: 20px;
+    padding: 1.8vw;
     display: flex;
     justify-content: center;
 }
@@ -131,17 +136,17 @@ img {
 }
 
 .products-top {
-    padding: 60px 30px;
+    padding: 2.5vw;
     align-items: center;
     justify-content: space-between;
 }
 
 .products-title {
     margin: 0 auto;
-    max-width: 785px;
+    max-width: 50vw;
     font-weight: 400;
-    font-size: 65px;
-    line-height: 73px;
+    font-size: 3.8em;
+    line-height: 1.1em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
@@ -152,23 +157,27 @@ img {
 .products-top::before {
     content : "";
     display: block;
-    width: 225px;
-    height: 156px;
+    width: 16vw;
+    height: 12vw;
     background-image: url(https://live.verstaem.online/ujjo/img/products-decor-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .products-top::after {
     content : "";
     display: block;
-    width: 225px;
-    height: 156px;
+    width: 16vw;
+    height: 12vw;
     background-image: url(https://live.verstaem.online/ujjo/img/products-decor-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .products-content {
     position: relative;
     margin-top: -1px;
-    padding-top: 20px;
+    padding-top: 1.5vw;
 }
 
 .products-list {
@@ -176,24 +185,23 @@ img {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding: 0 20px;
-    padding-bottom: 0px;
-    display: flex;
+    padding: 0 1vw;
+    padding-bottom: 0;
     justify-content: center;
 }
 
 .products-item {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 22px;
-    padding-top: 50px;
-    min-height: 658px;
+    padding: 1vw;
+    padding-top: 1.5vw;
+    min-height: 45vw;
     background-image: url(https://live.verstaem.online/ujjo/img/product-bg.svg);
     background-position: bottom center;
     background-size: auto;
@@ -201,10 +209,10 @@ img {
 }
 
 .card-taste {
-    margin-bottom: 14px;
+    margin-bottom: 1vw;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
@@ -213,10 +221,10 @@ img {
 
 .card-title {
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0.8vw;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
@@ -226,11 +234,11 @@ img {
 .products-decorative {
     position: absolute;
     left: 50%;
-    top: 20px;
+    top: 1.5vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: calc(100% - 40px);
+    width: 95vw;
     transform: translateX(-50%);
 }
 
@@ -239,9 +247,10 @@ img {
 }
 
 .products-phrase {
+    padding: 0.8vw 0;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: black;
@@ -249,7 +258,7 @@ img {
 
 .products-cover {
     margin-top: -1px;
-    padding: 20px;
+    padding: 1.8vw;
     display: flex;
     justify-content: center;
 }
@@ -273,11 +282,11 @@ img {
 
 .story-title {
     margin: 0;
-    margin-bottom: auto;
-    padding: 50px 60px;
+    border-bottom: 1px solid black;
+    padding: 1.5vw 8vw;
     font-weight: 400;
-    font-size: 58px;
-    line-height: 65px;
+    font-size: 3.8em;
+    line-height: 1.1em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
@@ -300,10 +309,10 @@ img {
 
 .story-text {
     margin: 0 auto;
-    max-width: 390px;
+    max-width: 28vw;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
@@ -311,22 +320,23 @@ img {
 }
 
 .story-text:not(:last-child) {
-    padding-bottom: 24px;
+    padding-bottom: 2vw;
 }
 
 .story-text:first-child {
-    padding-top: 130px;
+    padding-top: 10vw;
 }
 
 .story-text:last-child {
-    padding-bottom: 130px;
+    padding-bottom: 10vw;
 }
 
 .ticker-bottom {
+    padding: 0.8vw 0;
     margin-top: -1px;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: black;
@@ -338,7 +348,7 @@ img {
 
 .banner-image {
     display: block;
-    margin-top: -180px;
+    margin-top: -12vw;
     width: 100%;
 }
 
@@ -348,14 +358,14 @@ img {
     align-items: center;
     justify-content: space-between;
     margin-top: -1px;
-    padding: 20px 93px;
+    padding: 1vw 6vw;
     background-color: #cdfd3b;
 }
 
 .footer-text {
     font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
