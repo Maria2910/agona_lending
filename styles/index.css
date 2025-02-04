@@ -2,6 +2,10 @@
     font-family: "Roboto";
 }
 
+html, body {
+    min-width: 375px;
+}
+
 img {
     height: auto;
     max-width: 100%;
@@ -14,13 +18,22 @@ img {
 
 .flex {
     display: flex;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .header-block {
     align-items: center;
     justify-content: space-between;
     padding: 1vh 2vw;
-    padding: 22px;
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .button {
@@ -36,11 +49,23 @@ img {
     color: white;
     background-color: #fb4b4d;
     cursor: pointer;
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin: 2vw 0;
+    }
 }
 
 .nav-list {
     display: flex;
     align-items: center;
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .nav-link {
@@ -52,22 +77,34 @@ img {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #222;
+    text-decoration: none;
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        margin: 0;
+        padding-bottom: 3vw;
+    }
 }
 
 .nav-item {
     list-style-type: none;
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .nav-item:not(:last-child) {
     margin-right: 1.5vw;
-}
 
-.nav-link {
-    text-decoration: none;
+    @media (min-width: 375px) and (max-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .logo {
     padding: 0;
+    min-width: 10vw;
 }
 
 .hero-block {
@@ -77,10 +114,19 @@ img {
 .hero-left {
     border-right: 1px solid black;
     width: 50%;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        border: none;
+        width: 100%;
+    }
 }
 
 .hero-right {
     width: 50%;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        width: 100%;
+    }
 }
 
 .ticker {
@@ -152,6 +198,10 @@ img {
     text-transform: uppercase;
     color: black;
     display: inline-block;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        padding: 4vw 0;
+    }
 }
 
 .products-top::before {
@@ -231,6 +281,13 @@ img {
     color: black;
 }
 
+.card-image {
+    @media (min-width: 375px) and (max-width: 960px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .products-decorative {
     position: absolute;
     left: 50%;
@@ -240,6 +297,10 @@ img {
     justify-content: space-between;
     width: 95vw;
     transform: translateX(-50%);
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        display: none;
+    }
 }
 
 .products-ticker {
@@ -273,11 +334,20 @@ img {
     border-right: 1px solid black;
     width: 50%;
     aspect-ratio: 1/1;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        border: none;
+        width: 100%;
+    }
 }
 
 .story-right {
     width: 50%;
     aspect-ratio: 1/1;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        width: 100%;
+    }
 }
 
 .story-title {
@@ -305,6 +375,10 @@ img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        padding: 17vw 0;
+    }
 }
 
 .story-text {
@@ -370,4 +444,8 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: black;
+
+    @media (min-width: 375px) and (max-width: 960px) {
+        font-size: 0.6em;
+    }
 }
