@@ -136,6 +136,33 @@ img {
     border-bottom: 1px solid black;
 }
 
+.ticker-wrapper {
+    display: flex;
+}
+    
+.ticker-item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0.8vw 0;
+    white-space: nowrap;
+    animation: ticker 5s linear infinite;
+}
+    
+.ticker-icon {
+    padding: 0 1.5vw;
+}
+    
+@keyframes ticker {
+    0% {
+        transform: translateZ(0);
+    }
+    
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
 .ujjo-image {
     padding: 1.8vw;
     display: flex;
